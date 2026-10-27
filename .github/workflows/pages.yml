@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Verify public app archive
-        run: echo "d9a15abd421f25f9a97c4f1ea3a5038b41e63beaefaecce668120252d5e1175b  site.zip" | sha256sum --check
+        run: echo "ec45a76eb7d61ad7612c234ad31d86f50783699cf9b09db47bd8ccc633df4ee8  site.zip" | sha256sum --check
       - name: Unpack static app
         run: unzip -q site.zip -d _site
       - uses: actions/configure-pages@v5
